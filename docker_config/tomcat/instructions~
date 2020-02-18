@@ -1,0 +1,5 @@
+#!/bin/bash
+sudo docker build -t et0803/tomcat7:0.1 .
+sudo docker run --name sample_app_tomcat --volumes-from fetcher_sample -d -P et0803/tomcat7:0.1
+sudo docker port sample_app_tomcat 8080
+

@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo docker build -t et0803/redis_base:0.1 .

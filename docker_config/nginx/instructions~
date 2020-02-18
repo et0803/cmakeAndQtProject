@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo docker build -t et0803/nginx:0.0.1 .
+sudo docker run -d -p 80 --name website -v $PWD/website:/var/www/html/website et0803/nginx:0.0.1 nginx

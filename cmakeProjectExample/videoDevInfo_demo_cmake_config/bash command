@@ -1,0 +1,3 @@
+for I in /sys/class/video4linux/*; do cat $I/name; done
+
+v4l2-ctl --list-devices

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo docker build -t et0803/jekyll:0.1 .
+git clone https://github.com/jamtur01/james_blog.git
+sudo docker run -v /home/james/james_blog:/data/ --name james_blog et0803/jekyll:0.1

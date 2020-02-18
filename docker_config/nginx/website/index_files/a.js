@@ -1,0 +1,1 @@
+try{homeWeatherWarnFun__({"result":{"status":{"code":0,"msg":""},"data":["http:\/\/www.sinaimg.cn\/dy\/weather\/main\/w2014\/01\/icon_warn_small\/leidian_y.png"]}});}catch(e){};

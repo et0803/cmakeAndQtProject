@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo docker build -t et0803/jenkins_server:0.1 .
+sudo docker run -p 8080:8080 --name jenkins --privileged -d et0803/jenkins_server:0.1
+

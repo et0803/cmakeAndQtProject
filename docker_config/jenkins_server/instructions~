@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo docker build -t et0803/jenkins_server:0.1 .
+

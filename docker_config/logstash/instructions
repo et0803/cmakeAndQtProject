@@ -1,0 +1,4 @@
+#!/bin/bashs
+sudo docker build -t et0803/logstash:0.1 .
+sudo docker run -d --name logstash --volumes-from redis_primary --volumes-from nodeapp et0803/logstash:0.1
+sudo docker logs -f logstash

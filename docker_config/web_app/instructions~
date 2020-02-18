@@ -1,0 +1,8 @@
+#!/bin/bash
+sudo docker build -t et0803/sinatra:0.1 .
+chmod +x $PWD/webapp/bin/webapp
+sudo docker run -d -p 4567 --name webapp -v $PWD/webapp:/opt/webapp et0803/sinatra:0.1
+sudo docker logs webapp
+sudo docker logs -f webapp
+sudo docker top webapp
+sudo docker port webapp 4567

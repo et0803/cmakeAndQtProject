@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo docker build -t et0803/redis:0.1 .
+sudo docker run -d -p 6379 --name redis et0803/redis:0.1
+sudo apt-get -y install redis-tools
